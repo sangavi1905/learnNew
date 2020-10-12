@@ -11,8 +11,6 @@
 	<link rel="stylesheet" href="style/bootstrap.min.css"/>
 	<script src="angular.min.js"></script>
     <script src="Favouritecourse.js"></script>
-	<!--<link rel="stylesheet" href="style/font-awesome.min.css"/>
-	<link rel="stylesheet" href="style/owl.carousel.css"/>-->
 </head>
 
 <body>
@@ -77,7 +75,7 @@
 				<!-- categorie -->
 				<div class="col-lg-4 col-md-6">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="img/categories/1.jpg"></div>
+						<div class="ci-thumb set-bg"></div>
 						<div class="ci-text">
 							<h5>IT Development</h5>
 							<p>some of the courses related to IT development</p>
@@ -88,7 +86,7 @@
 				<!-- categorie -->
 				<div class="col-lg-4 col-md-6">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="img/categories/2.jpg"></div>
+						<div class="ci-thumb set-bg"></div>
 						<div class="ci-text">
 							<h5>Web Design</h5>
 							<p>designing web and UI</p>
@@ -99,7 +97,7 @@
 				<!-- categorie -->
 				<div class="col-lg-4 col-md-6">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="img/categories/3.jpg"></div>
+						<div class="ci-thumb set-bg" ></div>
 						<div class="ci-text">
 							<h5>Illustration & Drawing</h5>
 							<p>Engineering drawing and illurtrations</p>
@@ -110,7 +108,7 @@
 				<!-- categorie -->
 				<div class="col-lg-4 col-md-6">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="img/categories/4.jpg"></div>
+						<div class="ci-thumb set-bg"></div>
 						<div class="ci-text">
 							<h5>Social Media</h5>
 							<p>courses related media</p>
@@ -121,7 +119,7 @@
 				<!-- categorie -->
 				<div class="col-lg-4 col-md-6">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="img/categories/5.jpg"></div>
+						<div class="ci-thumb set-bg"></div>
 						<div class="ci-text">
 							<h5>Photoshop</h5>
 							<p>courses related to photoshop</p>
@@ -153,10 +151,6 @@
 					<div class="col-md-10 offset-md-1">
 						<!-- search form -->
 						<form class="course-search-form" ng-app="FavouritecourseApp">
-							<!--<input type="text" placeholder="Course">
-							<input type="text" class="last-m" placeholder="Category"><br><br>
-							<button  class="site-btn" style="text-align:center">Search Couse</button>-->
-							<!--Custom Service-->
                             <div ng-controller='favoAddController as courseAdder'>
                               <input type="text" ng-model="courseAdder.courseName" placeholder="Category">
                               <input type="text" ng-model="courseAdder.category" placeholder="Course Name"><br><br>
