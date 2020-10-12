@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>LearnNew</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="LearnNew">
+	<meta name="keywords" content="LearnNew">
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+	<link rel="stylesheet" href="style/bootstrap.min.css"/>
+	<script src="angular.min.js"></script>
+	<script src="aboutus.js"></script>
+    <title>about us</title>
+    
+	<!--<link rel="stylesheet" href="style/font-awesome.min.css"/>
+	<link rel="stylesheet" href="style/owl.carousel.css"/>-->
+</head>
+
+<body ng-app = 'filApp'>
+  <header class="header-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="site-logo">
+						<h2 style="color:red">LearnNew</h2>
+					</div>
+					<div class="nav-switch">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9">
+					<nav class="main-menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutus.html">About us</a></li>
+							<li><a href="courses.html">Courses</a></li>
+							<li><a href="blog.html">News</a></li>
+							<li><a href="contact.html">Contact</a></li>&nbsp;&nbsp;&nbsp;
+							<a href="" class="site-btn">Login</a>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header> 
+	<section class="hero-section" style="background-image:url('img/bg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+		<div class="container">
+			<div class="hero-text text-white" ng-controller = 'filController'>
+				<h2>Get The Best Online Courses</h2>
+				<p>LearnNew is an open community for students. We help you to learn and explore new, 
+				courses and expand your knowledge , and find your next dream job.
+                <br> Come and explore your favourite courses</p>
+				 <h2>About Us</h2>
+				 created on: {{sayMessage()}}<br>
+                 Name: {{sayLikesMessage()}}<br>
+                 Learning platform: {{sayLikesMessage() | likesall : "filter" :"gives online certifications"| uppercase }}<p>gives online certifications</p>
+			</div>
+		</div>
+	<section>
+   <footer class="footer-section spad pb-0">
+		<div class="footer-top">
+			<div class="footer-warp">
+				<div class="row">
+					<div class="widget-item">
+						<h4>Contact Info</h4>
+						<ul class="contact-list">
+							<li>123 marina beach<br>Chennai,TN</li>
+							<li>yourmail@gmail.com</li>
+						</ul>
+					</div>
+					<div class="widget-item">
+						<h4>Engineering</h4>
+						<ul>
+							<li><a href="">Applied Studies</a></li>
+							<li><a href="">Computer Engineering</a></li>
+							<li><a href="">Software Engineering</a></li>
+							<li><a href="">Informational Engineering</a></li>
+							<li><a href="">System Engineering</a></li>
+						</ul>
+					</div>
+					<div class="widget-item">
+						<h4>Web development</h4>
+						<ul>
+							<li><a href="">HTML</a></li>
+							<li><a href="">CSS and Javascript</a></li>
+							<li><a href="">PHP</a></li>
+							<li><a href="">Nodejs</a></li>
+							<li><a href="">Angular JS</a></li>
+						</ul>
+					</div>
+					<div class="widget-item">
+						<h4>Security</h4>
+						<ul>
+							<li><a href="">Computer Networks</a></li>
+							<li><a href="">Cyber Security</a></li>
+							<li><a href="">Information Security</a></li>
+						</ul>
+					</div>
+					<div class="widget-item">
+						<h4>Newsletter</h4>
+						<form class="footer-newslatter
+							<li><a href="">Crypography</a></li>">
+							<input type="email" placeholder="E-mail">
+							<button class="site-btn">Subscribe</button>
+							<p>*We don’t spam</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="footer-warp">
+				<ul class="footer-menu">
+					<li><a href="#">Terms & Conditions</a></li>
+					<li><a href="#">Register</a></li>
+					<li><a href="#">Privacy</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer> 
+    
+	 
+  </body>
+</html>
